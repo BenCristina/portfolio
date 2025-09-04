@@ -1,0 +1,221 @@
+/*
+Colour Palette:
+    <body> #393b4f
+    <h1> #ec9928
+    <h2> #52adf9
+    <p> #fafafa
+    <border> #060c2a
+*/
+
+/* Home Page*/
+body {
+    background-color: #393b4f;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+}
+
+.header {
+    display: block;
+}
+
+.content {
+    display: block;
+}
+
+.footer {
+    display: block;
+}
+
+h1 {
+    color: #ec9928;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0 0;
+    position: relative;
+    top: 5%;
+}
+
+h2 {
+    color: #52adf9;
+    font-size: 2rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+h3 {
+    color: #ec9928;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+.return-to-home {
+    color: #fafafa;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    text-decoration: none;
+    margin: 10px 10px;
+    visibility: hidden;
+}
+
+.return-to-home:hover {
+    color: #52adf9;
+}
+
+p {
+    color: #fafafa;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0 0;
+    text-align: justify;
+}
+
+a {
+    color: #fafafa;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+li {
+    color: #fafafa;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0;
+}
+
+li a {
+    color: #fafafa;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.title {
+    color: #52adf9;
+    font-size: 1.3rem;
+    line-height: 2.5;
+    margin: 0 0;
+    font-weight: lighter;
+}
+
+/* Header */
+.header {
+    display: block;
+    height: 300px;
+    background-image: url("./Assets/Images/website-header.png");
+    background-size: cover;
+    background-position: center;
+    background-position-y: bottom;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Content */
+.content {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.about-box {
+    display: block;
+    margin: 0 0;
+}
+
+.menu-grid {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 49% 2% 49%;
+}
+
+@media (max-width: 650px) {
+    .menu-grid {
+        grid-template-columns: 100%;
+    }
+}
+
+.menu-image-wrapper {
+    justify-self: center;
+    margin-top: 3%;
+    position: relative;
+}
+
+.menu-image-wrapper:hover > h3 {
+    visibility: visible;
+}
+
+.menu-image-wrapper > h3 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fafafa;
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out 0.2s;
+}
+
+.menu-image {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out 0.2s;
+}
+
+.menu-image:hover {
+    filter: brightness(0.6);
+    transform: scale(1.02);
+}
+
+/* Footer */
+.footer {
+    display: block;
+    margin-top: 50px;
+    height: 100px;
+    background-color: #060c2a;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    height: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: 20px 15px;
+}
+
+#apple-music-logo {
+    padding-bottom: 3px;
+    height: 17px;
+}
+
+.social-icon:hover {
+    filter: brightness(0.8);
+    transform: scale(1.1);
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright > p {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+
+
