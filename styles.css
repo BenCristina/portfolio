@@ -55,7 +55,6 @@ h3 {
     font-weight: lighter;
     text-decoration: none;
     margin: 10px 10px;
-    visibility: hidden;
 }
 
 .return-to-home:hover {
@@ -88,6 +87,25 @@ li a {
     color: #fafafa;
     font-size: 1rem;
     line-height: 1.6;
+    text-decoration: underline;
+}
+
+li a:hover {
+    color: #ec9928;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.job-title-container div {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.list-title {
+    list-style-type: none;
 }
 
 .title {
@@ -96,6 +114,7 @@ li a {
     line-height: 2.5;
     margin: 0 0;
     font-weight: lighter;
+    list-style-type: none;
 }
 
 /* Header */
@@ -115,7 +134,7 @@ li a {
     object-fit: cover;
     position: absolute;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    top: 12%;
+    top: 9%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -123,7 +142,7 @@ li a {
 /* Content */
 .content {
     max-width: 840px;
-    margin: 0 auto;
+    margin: 80px auto;
 }
 
 .about-box {
