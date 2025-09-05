@@ -13,6 +13,7 @@ body {
     background-color: #393b4f;
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
+    min-width: 360px;
 }
 
 .header {
@@ -21,7 +22,7 @@ body {
 
 .content {
     display: block;
-    padding: 0 20px;
+    padding: 10px 10px;
 }
 
 .footer {
@@ -35,7 +36,7 @@ h1 {
     text-align: center;
     margin: 0 0;
     position: relative;
-    top: 20%;
+    top: 10%;
 }
 
 h2 {
@@ -121,8 +122,9 @@ hr {
 
 /* Header */
 .header {
-    display: block;
-    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 250px;
     background-image: url("./Assets/Images/website-header.png");
     background-size: cover;
     background-position: center;
@@ -144,7 +146,7 @@ hr {
 /* Content */
 .content {
     max-width: 840px;
-    margin: 80px auto;
+    margin: 100px auto;
 }
 
 .about-box {
