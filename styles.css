@@ -138,7 +138,7 @@ hr {
     object-fit: cover;
     position: absolute;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    top: 9%;
+    top: 12%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -172,7 +172,7 @@ hr {
     .profile-picture {
         width: 200px;
         height: 200px;
-        top: 12%;
+        top: 15%;
     }
 }
 
