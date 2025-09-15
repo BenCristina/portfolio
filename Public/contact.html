@@ -10,10 +10,83 @@
           rel="stylesheet">
 </head>
 <body>
-    <h1>Contact Me</h1>
-    <p>
-        Email: <a href="mailto:benjamincristina@icloud.com">benjamincristina@icloud.com</a><br>
-        Phone: +4915237161078<br>
-    </p>
+<a href="#main" class="main-link">Skip to content</a>
+<div class="header" id="header-contact">
+    <a class="return-to-home" href="../index.html">← Home</a>
+</div>
+<div class="content">
+    <main id="main">
+        <div class="contact-form-wrapper">
+            <form onsubmit="validateForm();" class="contact-form">
+                <div class="h2-wrapper">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="input-wrapper">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Your name">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-wrapper">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" placeholder="Your email">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-wrapper">
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="Your message" rows="6"></textarea>
+                    <small class="error-message"></small>
+                </div>
+                <div class="button-wrapper">
+                    <button type="submit">Send</button>
+                </div>
+                <div class="success-message-wrapper">
+                    <small class="success-message"></small>
+                </div>
+            </form>
+        </div>
+    </main>
+</div>
+<div class="footer">
+    <div class="social-icons-wrapper">
+        <div class="github">
+            <a href="https://github.com/BenCristina" target="_blank">
+                <img src="../Assets/Images/github-logo.png" alt="GitHub logo" class="social-icon" id="github-logo">
+            </a>
+        </div>
+        <div class="apple-music">
+            <a href="https://music.apple.com/de/artist/benjamin-cristina/1221550774?l=en-GB" target="_blank">
+                <img src="../Assets/Images/apple-music-logo.png" alt="Apple Music logo" class="social-icon"
+                     id="apple-music-logo">
+            </a>
+        </div>
+        <div class="youtube">
+            <a href="https://www.youtube.com/@BenjaminCristina" target="_blank">
+                <img src="../Assets/Images/youtube-logo.png" alt="YouTube logo" class="social-icon" id="youtube-logo">
+            </a>
+        </div>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/benjamin-cristina" target="_blank">
+                <img src="../Assets/Images/linkedIn-logo.png" alt="LinkedIn logo" class="social-icon"
+                     id="linkedIn-logo">
+            </a>
+        </div>
+    </div>
+    <div class="copyright-wrapper">
+        <p>
+            ©2025 Benjamin Cristina. All rights reserved.
+        </p>
+    </div>
+</div>
+<script src="../index.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "tjSdvNby4OYf5Xr1W",
+        });
+    })();
+</script>
 </body>
 </html>
