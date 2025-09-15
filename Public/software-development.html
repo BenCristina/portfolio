@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
 </head>
-<body>
+<body id="software-development-page">
 <a href="#main" class="main-link">Skip to content</a>
 <div class="header" id="header-software-development">
     <a class="return-to-home" href="../index.html">← Home</a>
@@ -21,40 +21,101 @@
     <main id="main">
         <div class="about-box">
             <div class="h2-wrapper">
-                <h2>Project overview</h2>
+                <h2>Projects overview</h2>
             </div>
             <div class="p-wrapper">
                 <p class="about-text">
                     Below you can find a selection of my projects. This list is constantly evolving, and I am always
-                    looking for new ideas and opportunities to expand my skill set. Also, the projects are not in their
-                    final state, but are currently working as intended. There will be updates, added features, bug fixes and so on.
-                    If you have any questions or suggestions, feel free to reach out to me.
+                    looking for new ideas and opportunities to expand my skill set. The projects are not in their
+                    final state, but are currently working pretty much as intended. There will be updates, added
+                    features, bug fixes and so on in the near future.
                 </p>
+                <p class="about-text">
+                    Being a musician myself, most of these projects are somewhat related to the arts, but their
+                    functionality
+                    can easily translate to other areas. Since I don't have a design background, some will look a little
+                    rough
+                    around the edges. However, I always try my best to create something that's easy on the eye, and most importantly: functional.
+                </p>
+
             </div>
         </div>
         <div class="menu-grid">
-            <a href="https://bencristina.github.io/DrumsOnline/" class="menu-image-wrapper" target="_blank">
-                <div class="menu-image-wrapper" id="">
-                    <img src="../Assets/Images/online-drums-screenshot.png"
-                         alt="Website Screenshot of Drums Online Project" class="menu-image">
-                    <h3>🥁 Drums Online</h3>
+            <div class="menu-image-wrapper">
+                <a href="https://bencristina.github.io/DrumsOnline/" class="menu-image-wrapper" target="_blank">
+                    <div class="menu-image-wrapper glass" id="drums-online-link">
+                        <div class="menu-image">
+                        </div>
+                    </div>
+                </a>
+                <div class="menu-text-wrapper">
+                    <h6>🥁 Drums Online</h6>
+                    <p>
+                        This is a browser-based drum kit that can be played by click/tap, computer keyboard, or MIDI
+                        keyboard.
+                    </p>
+                    <ul>
+                        <li>Languages: HTML, CSS, Javascript</li>
+                        <li>Graphics: Pixelmator Pro</li>
+                        <li>Sounds: Logic Pro X</li>
+                    </ul>
                 </div>
-            </a>
+            </div>
             <div class="menu-image-wrapper"></div>
-            <a href="https://github.com/BenCristina/MusicStoreApp" class="menu-image-wrapper" target="_blank">
-                <div class="menu-image-wrapper" id="">
-                    <img src="../Assets/Images/music-store-screenshot.png"
-                         alt="Application Screenshot of C# Music Store Project" class="menu-image">
-                    <h3>Music Store App</h3>
+            <div class="menu-image-wrapper">
+                <a href="https://github.com/BenCristina/MusicStoreApp" class="menu-image-wrapper" target="_blank">
+                    <div class="menu-image-wrapper glass" id="music-store-link">
+                        <div class="menu-image">
+                        </div>
+                    </div>
+                </a>
+                <div class="menu-text-wrapper">
+                    <h6>💿 Music Store App</h6>
+                    <p>
+                        This application for <b>Microsoft Windows</b> mimics a database-connected online-shop for music
+                        media (e.g. CD, Vinyl, Cassette, Download).
+                    </p>
+                    <ul>
+                        <li>Languages: C#, <b>Microsoft SQL Server</b></li>
+                        <li>GUI: Windows Forms</li>
+                    </ul>
                 </div>
-            </a>
-            <a href="https://github.com/BenCristina/rehearsalplannerconsoleonly" class="menu-image-wrapper" target="_blank">
-                <div class="menu-image-wrapper" id="">
-                    <img src="../Assets/Images/rehearsal-planner-screenshot.png" alt="App[lication Screenshot of Java Rehearsal Planner Project running in Console" class="menu-image">
-                    <h3>Rehearsal Planner</h3>
+            </div>
+            <div class="menu-image-wrapper">
+                <a href="https://github.com/BenCristina/rehearsalplannerconsoleonly" class="menu-image-wrapper"
+                   target="_blank">
+                    <div class="menu-image-wrapper glass" id="rehearsal-planner-link">
+                        <div class="menu-image">
+
+                        </div>
+                    </div>
+                </a>
+                <div class="menu-text-wrapper">
+                    <h6>🎭 Rehearsal Planner</h6>
+                    <p>
+                        A simple console application that automatically creates possible rehearsal schedules according
+                        to the availabilities of the actors.
+                    </p>
+                    <ul>
+                        <li>Languages: Java</li>
+                        <li>Data storage: txt-file</li>
+                    </ul>
                 </div>
-            </a>
+            </div>
             <div class="menu-image-wrapper"></div>
+            <div class="menu-image-wrapper">
+                <a href="" class="menu-image-wrapper">
+                    <div class="menu-image-wrapper" id="">
+
+                    </div>
+                </a>
+                <div class="menu-text-wrapper">
+                    <h6></h6>
+                    <p></p>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
         </div>
     </main>
 </div>
@@ -62,24 +123,26 @@
     <div class="social-icons-wrapper">
         <div class="github">
             <a href="https://github.com/BenCristina" target="_blank">
-                <img src="../Assets/Images/github-logo.png" alt="GitHub logo" class="social-icon" id="github-logo">
+                <div class="social-icon glass" id="github-logo">
+                </div>
             </a>
         </div>
         <div class="apple-music">
             <a href="https://music.apple.com/de/artist/benjamin-cristina/1221550774?l=en-GB" target="_blank">
-                <img src="../Assets/Images/apple-music-logo.png" alt="Apple Music logo" class="social-icon"
-                     id="apple-music-logo">
+                <div class="social-icon glass" id="apple-music-logo">
+                </div>
             </a>
         </div>
         <div class="youtube">
             <a href="https://www.youtube.com/@BenjaminCristina" target="_blank">
-                <img src="../Assets/Images/youtube-logo.png" alt="YouTube logo" class="social-icon" id="youtube-logo">
+                <div class="social-icon glass" id="youtube-logo">
+                </div>
             </a>
         </div>
         <div class="linkedin">
             <a href="https://www.linkedin.com/in/benjamin-cristina" target="_blank">
-                <img src="../Assets/Images/linkedIn-logo.png" alt="LinkedIn logo" class="social-icon"
-                     id="linkedIn-logo">
+                <div class="social-icon glass" id="linkedin-logo">
+                </div>
             </a>
         </div>
     </div>

@@ -10,11 +10,63 @@ Colour Palette:
 
 /* Home Page*/
 body {
-    background-color: #393b4f;
     font-family: 'Roboto', sans-serif;
     line-height: 1;
     margin: 0 0;
     min-width: 300px;
+    background-image: url("./Assets/Images/Textures/background-image.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#index-page {
+
+}
+
+#software-development-page {
+
+}
+
+#music-production-page {
+
+}
+
+#resume-page {
+
+}
+
+#contact-page {
+
+}
+
+.glass {
+    position: relative;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 2rem;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2),
+    inset 0 4px 20px rgba(255, 255, 255, 0.3);
+}
+
+.glass::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    backdrop-filter: blur(1px);
+    box-shadow: inset -10px -8px 0 -11px rgba(255, 255, 255, 1),
+    inset 0 -9px 0 -8px rgba(255, 255, 255, 1);
+    opacity: 0.6;
+    z-index: -1;
+    filter: blur(1px) drop-shadow(10px 4px 6px black) brightness(115%);
 }
 
 .main-link {
@@ -82,6 +134,14 @@ h5 {
     margin: 0 0;
 }
 
+h6 {
+    color: #fafafa;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin: 0 0;
+}
+
 .return-to-home {
     color: #fafafa;
     font-size: 1.2rem;
@@ -124,7 +184,6 @@ li {
 
 li ul {
     padding-inline-start: 30px;
-
 }
 
 li a {
@@ -202,7 +261,11 @@ hr {
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2),
+    inset 0 4px 20px rgba(255, 255, 255, 0.3);
 }
 
 /* Content */
@@ -219,8 +282,23 @@ hr {
 
 .menu-grid {
     display: grid;
-    margin-top: 20px;
-    grid-template-columns: 49% 2% 49%;
+    grid-template-columns: 48% 4% 48%;
+}
+
+.menu-text-wrapper {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.menu-text-wrapper p {
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.menu-image-wrapper ul {
+    margin-top: 10px;
+    margin-left: 30px;
 }
 
 @media (max-width: 750px) {
@@ -248,35 +326,148 @@ hr {
 
 .menu-image-wrapper {
     justify-self: center;
-    margin-top: 3%;
+    margin-top: 4%;
     position: relative;
 }
 
-.menu-image-wrapper:hover > h3 {
-    visibility: visible;
+.menu-image > h3 {
+    color: #fafafa;
+    font-size: 1.5rem;
+    font-weight: lighter;
 }
 
-.menu-image-wrapper > h3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 90%;
-    transform: translate(-50%, -50%);
-    color: #fafafa;
-    visibility: hidden;
-    z-index: 2;
+#software-development-link {
+    width: 100%;
+    height: 400px;
+    background-image: url("./Assets/Images/software-development.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     transition: all ease-in-out 0.2s;
+    filter: brightness(0.8);
+}
+
+#music-production-link {
+    width: 100%;
+    height: 400px;
+    background-image: url("./Assets/Images/music-production.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all ease-in-out 0.2s;
+    filter: brightness(0.8);
+}
+
+#resume-link {
+    width: 100%;
+    height: 400px;
+    background-image: url("./Assets/Images/resume.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all ease-in-out 0.2s;
+    filter: brightness(0.8);
+}
+
+#contact-link {
+    width: 100%;
+    height: 400px;
+    background-image: url("./Assets/Images/contact.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all ease-in-out 0.2s;
+    filter: brightness(0.8);
+}
+
+#drums-online-link {
+    width: 100%;
+    height: 400px;
+    background-image: url("./Assets/Images/online-drums-screenshot.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all ease-in-out 0.2s;
+    filter: brightness(0.8);
+}
+
+#music-store-link {
+    width: 100%;
+    height: 400px;
+    background-image: url("./Assets/Images/music-store-screenshot.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all ease-in-out 0.2s;
+    filter: brightness(0.8);
+}
+
+#rehearsal-planner-link {
+    width: 100%;
+    height: 400px;
+    background-image: url("./Assets/Images/rehearsal-planner-screenshot.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all ease-in-out 0.2s;
+    filter: brightness(0.8);
+}
+
+.placeholder-link {
+    width: 100%;
+    height: 400px;
+    background-color: #060c2a;
+    transition: all ease-in-out 0.2s;
+    filter: brightness(0.8);
+}
+
+.placeholder-link:hover {
+    transform: scale(1.02);
+    filter: brightness(1);
+}
+
+
+#software-development-link:hover {
+    transform: scale(1.02);
+    filter: brightness(1);
+}
+
+#music-production-link:hover {
+    transform: scale(1.02);
+    filter: brightness(1);
+}
+
+#resume-link:hover {
+    transform: scale(1.02);
+    filter: brightness(1);
+}
+
+#contact-link:hover {
+    transform: scale(1.02);
+    filter: brightness(1);
+}
+
+#drums-online-link:hover {
+    transform: scale(1.02);
+    filter: brightness(1);
+}
+
+#music-store-link:hover {
+    transform: scale(1.02);
+    filter: brightness(1);
+}
+
+#rehearsal-planner-link:hover {
+    transform: scale(1.02);
+    filter: brightness(1);
 }
 
 .menu-image {
     max-width: 100%;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    transition: all ease-in-out 0.2s;
 }
 
 .menu-image:hover {
-    filter: brightness(0.3);
     transform: scale(1.02);
 }
 
@@ -285,24 +476,27 @@ hr {
     margin-bottom: 20px;
 }
 
+.about-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* Contact form */
 .contact-form-wrapper h2 {
-    font-weight: normal;
+    font-weight: lighter;
+    font-size: 2rem;
 }
 
 form {
     max-width: 600px;
-    width: 90%;
-    background-color: #fafafa;
-    margin: 0 auto 10vh auto;
-    padding: 40px;
-    border-radius: 5px;
-    box-sizing: border-box;
+    width: 100%;
+    margin: 5vh auto 5vh auto;
 }
 
 label {
     display: block;
     margin: 20px 0;
+    color: #ec9928;
 }
 
 input, textarea {
@@ -312,11 +506,12 @@ input, textarea {
     outline: none;
     resize: none;
     border: none;
+    border-radius: 4px;
     border-bottom: 1px solid #060c2a;
 }
 
 input:focus, textarea:focus {
-    border-bottom: 1px solid #ec9928;
+    border: 2px solid #52adf9;
 }
 
 textarea::-webkit-scrollbar {
@@ -330,34 +525,44 @@ textarea::-webkit-scrollbar {
 button[type="submit"] {
     margin-top: 30px;
     width: 90%;
+    height: 50px;
     max-width: 200px;
-    background-color: #52adf9;
     color: #fafafa;
+    font-size: 1.1rem;
     padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all ease-in-out 0.2s;
 }
+
 
 button[type="submit"]:hover {
     background-color: #ec9928;
-    transform: scale(1.02);
+    transform: scale(1.1);
+    transition: all ease-in-out 0.2s;
+}
+
+.error-and-counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .error-message {
-    color: red;
+    color: orangered;
 }
 
 .error-border {
-    border-bottom: 1px solid red;
+    border: 1px solid orangered;
+}
+
+.counter {
+    color: #fafafa;
 }
 
 .success-message {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: green;
+    color: springgreen;
     margin-top: 10px;
 }
 
@@ -368,6 +573,7 @@ button[type="submit"]:hover {
     margin-top: 50px;
     height: 100px;
     background-color: #060c2a;
+    border-top: 1px solid #fafafa;
 }
 
 .social-icons-wrapper {
@@ -378,18 +584,43 @@ button[type="submit"]:hover {
 
 .social-icon {
     height: 20px;
+    width: 100px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    margin: 20px 15px;
+    margin: 20px 10px;
 }
 
 #apple-music-logo {
-    padding-bottom: 3px;
-    height: 17px;
+    background-image: url("./Assets/Images/Icons/apple-music-logo.png");
+    background-size: 70% 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 3px;
+}
+
+#github-logo {
+    background-image: url("./Assets/Images/Icons/github-logo.png");
+    background-size: 70% 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#youtube-logo {
+    background-image: url("./Assets/Images/Icons/youtube-logo.png");
+    background-size: 70% 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#linkedin-logo {
+    background-image: url("./Assets/Images/Icons/linkedIn-logo.png");
+    background-size: 70% 70%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .social-icon:hover {
-    filter: brightness(0.8);
-    transform: scale(1.1);
+    transform: scale(1.2);
+    transition: all ease-in-out 0.2s;
 }
 
 .copyright-wrapper {

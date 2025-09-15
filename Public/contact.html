@@ -9,17 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
 </head>
-<body>
+<body id="contact-page">
 <a href="#main" class="main-link">Skip to content</a>
 <div class="header" id="header-contact">
     <a class="return-to-home" href="../index.html">← Home</a>
+    <div class="h1-wrapper">
+        <h1>Contact</h1>
+    </div>
 </div>
 <div class="content">
     <main id="main">
+        <div class="about-box">
+            <div class="h2-wrapper">
+                <h2>Let's connect!</h2>
+            </div>
+            <div class="p-wrapper">
+                <p class="about-text">
+                    I’m always happy to hear from you — whether it’s about exciting job opportunities, potential
+                    collaborations, or just a quick hello.
+                    Feel free to reach out, and I’ll get back to you as soon as possible. I’m looking forward to
+                    connecting!
+                </p>
+            </div>
+        </div>
+        <hr>
         <div class="contact-form-wrapper">
-            <form onsubmit="validateForm();" class="contact-form">
+            <form onsubmit="validateForm();" class="contact-form glass">
                 <div class="h2-wrapper">
-                    <h2>Contact Me</h2>
+                    <h2>Send me a message</h2>
                 </div>
                 <div class="input-wrapper">
                     <label for="name">Name:</label>
@@ -34,10 +51,13 @@
                 <div class="input-wrapper">
                     <label for="message">Message:</label>
                     <textarea id="message" placeholder="Your message" rows="6"></textarea>
-                    <small class="error-message"></small>
+                    <div class="error-and-counter">
+                        <small class="error-message"></small>
+                        <small class="counter"></small>
+                    </div>
                 </div>
                 <div class="button-wrapper">
-                    <button type="submit">Send</button>
+                    <button type="submit" class="glass">Send</button>
                 </div>
                 <div class="success-message-wrapper">
                     <small class="success-message"></small>
@@ -50,24 +70,26 @@
     <div class="social-icons-wrapper">
         <div class="github">
             <a href="https://github.com/BenCristina" target="_blank">
-                <img src="../Assets/Images/github-logo.png" alt="GitHub logo" class="social-icon" id="github-logo">
+                <div class="social-icon glass" id="github-logo">
+                </div>
             </a>
         </div>
         <div class="apple-music">
             <a href="https://music.apple.com/de/artist/benjamin-cristina/1221550774?l=en-GB" target="_blank">
-                <img src="../Assets/Images/apple-music-logo.png" alt="Apple Music logo" class="social-icon"
-                     id="apple-music-logo">
+                <div class="social-icon glass" id="apple-music-logo">
+                </div>
             </a>
         </div>
         <div class="youtube">
             <a href="https://www.youtube.com/@BenjaminCristina" target="_blank">
-                <img src="../Assets/Images/youtube-logo.png" alt="YouTube logo" class="social-icon" id="youtube-logo">
+                <div class="social-icon glass" id="youtube-logo">
+                </div>
             </a>
         </div>
         <div class="linkedin">
             <a href="https://www.linkedin.com/in/benjamin-cristina" target="_blank">
-                <img src="../Assets/Images/linkedIn-logo.png" alt="LinkedIn logo" class="social-icon"
-                     id="linkedIn-logo">
+                <div class="social-icon glass" id="linkedin-logo">
+                </div>
             </a>
         </div>
     </div>
@@ -82,7 +104,7 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 <script type="text/javascript">
-    (function(){
+    (function () {
         emailjs.init({
             publicKey: "tjSdvNby4OYf5Xr1W",
         });
