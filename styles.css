@@ -144,11 +144,13 @@ h6 {
 
 .return-to-home {
     color: #fafafa;
+    width: 80px;
     font-size: 1.2rem;
     line-height: 1;
     font-weight: lighter;
     text-decoration: none;
-    margin: 20px 20px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .return-to-home:hover {
@@ -321,7 +323,7 @@ hr {
 
 .menu-image-wrapper {
     justify-self: center;
-    margin-top: 4%;
+    margin-top: 5%;
     position: relative;
 }
 
