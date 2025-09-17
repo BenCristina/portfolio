@@ -326,15 +326,27 @@ hr {
 }
 
 .menu-image > h3 {
+    display: none;
     color: #fafafa;
     font-size: 1.5rem;
     font-weight: lighter;
+    line-height: 1.2em;
+    margin: 0 0;
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-image-wrapper:hover .menu-image > h3 {
+    display: block;
 }
 
 #software-development-link {
     width: 100%;
     height: 400px;
-    background-image: url("./Assets/Images/software-development.png");
+    background-image: url("./Assets/Images/software-development.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -345,7 +357,7 @@ hr {
 #music-production-link {
     width: 100%;
     height: 400px;
-    background-image: url("./Assets/Images/music-production.png");
+    background-image: url("./Assets/Images/music-production.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -356,7 +368,7 @@ hr {
 #resume-link {
     width: 100%;
     height: 400px;
-    background-image: url("./Assets/Images/resume.png");
+    background-image: url("./Assets/Images/resume.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -367,7 +379,7 @@ hr {
 #contact-link {
     width: 100%;
     height: 400px;
-    background-image: url("./Assets/Images/contact.png");
+    background-image: url("./Assets/Images/contact.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -463,7 +475,7 @@ hr {
 }
 
 .menu-image:hover {
-    transform: scale(1.02);
+
 }
 
 .job-title-container {
