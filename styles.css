@@ -330,13 +330,13 @@ hr {
 .menu-image > h3 {
     display: none;
     color: #fafafa;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: lighter;
     line-height: 1.2em;
     margin: 0 0;
     text-align: center;
     position: absolute;
-    top: 80%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -356,6 +356,10 @@ hr {
     filter: brightness(0.8);
 }
 
+#software-development-link:hover {
+    background-image: url("./Assets/Images/software-development-hover.jpg");
+}
+
 #music-production-link {
     width: 100%;
     height: 400px;
@@ -365,6 +369,10 @@ hr {
     background-repeat: no-repeat;
     transition: all ease-in-out 0.2s;
     filter: brightness(0.8);
+}
+
+#music-production-link:hover {
+    background-image: url("./Assets/Images/music-production-hover.jpg");
 }
 
 #resume-link {
@@ -378,6 +386,10 @@ hr {
     filter: brightness(0.8);
 }
 
+#resume-link:hover {
+    background-image: url("./Assets/Images/resume-hover.jpg");
+}
+
 #contact-link {
     width: 100%;
     height: 400px;
@@ -387,6 +399,10 @@ hr {
     background-repeat: no-repeat;
     transition: all ease-in-out 0.2s;
     filter: brightness(0.8);
+}
+
+#contact-link:hover {
+    background-image: url("./Assets/Images/contact-hover.jpg");
 }
 
 #drums-online-link {
